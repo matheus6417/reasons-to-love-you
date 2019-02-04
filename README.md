@@ -1,2 +1,22 @@
-# reasons-to-love-you
-A tribute of love to my fiance, where a button sort a reason to love her. I am using axious to get a row from a google sheets API (Nuxt generated static website)
+# ntest
+
+> Testing nuxt
+
+## Build Setup
+
+``` bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn run dev
+
+# build for production and launch server
+$ yarn run build
+$ yarn start
+
+# generate static project
+$ yarn run generate
+```
+
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
