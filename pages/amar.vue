@@ -9,15 +9,16 @@
         <div class="mantra current" style="display: block;">
           <div class="inner-wrapper">
             <div class="center-align">
+             <div class="mantra-wrap">
+                <blockquote id="quote" v-html="quote">
+                </blockquote>
+              </div>
               <div class="credit-wrap"><span class="line"></span><span class="cboldup" v-html="idQuote"> </span><span
                   class="cboldup"> Escrito por</span>
                 <h3><span class="founder-name">Matheus Cezar</span><br><span class="founder-clink"><em>Para: Elizabeth
                       Freitas</em></span></h3>
               </div>
-              <div class="mantra-wrap">
-                <blockquote id="quote" v-html="quote">
-                </blockquote>
-              </div>
+
             </div>
           </div>
         </div>
@@ -1578,9 +1579,17 @@
   .main {
     height: 100%;
     clear: both;
-    overflow: auto
+    overflow: auto;
+    position: absolute;
   }
-
+    #loader {
+        background: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
   .loading-overlay {
     position: fixed;
     top: 0;
@@ -1654,11 +1663,7 @@
     opacity: .3
   }
 
-  .semi-trans.active,
-  .semi-trans:focus,
-  .semi-trans:hover {
-    opacity: 1
-  }
+
 
   .mdate {
     display: inline-block;
@@ -1862,7 +1867,8 @@
   }
 
   .logo {
-    text-align: center;
+          opacity: 0.22;
+       text-align: center;
     z-index: 8888;
     position: fixed;
     top: 25px;
@@ -1870,10 +1876,17 @@
     width: 140px;
     margin-left: -70px;
     cursor: pointer;
-    -webkit-transition: all .35s cubic-bezier(.23, 1, .32, 1);
-    transition: all .35s cubic-bezier(.23, 1,
-      .32, 1)
-  }
+    transition: all .35s cubic-bezier(.23,1,.32,1);
+    font-family: circular_black,Helvetica,sans-serif;
+    font-weight: lighter;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    font-size: 6.2rem;
+    line-height: 1.05em;
+    -webkit-filter: invert(0) grayscale(1) drop-shadow(.01em .01em 2em #000);
+    filter: invert(0) grayscale(1) drop-shadow(.01em .01em 2em #000);
+}
 
   @media all and (max-width:767px) {
     .logo {
@@ -1885,9 +1898,6 @@
     opacity: .6
   }
 
-  .logo.about-open:hover {
-    opacity: 1
-  }
 
   @media all and (max-width:767px) {
     .logo.about-open {
@@ -2102,7 +2112,6 @@
   .mantra-screen .center-align {
     display: table-cell;
     vertical-align: middle;
-    height: 100%
   }
 
   @media all and (max-width:767px) {
