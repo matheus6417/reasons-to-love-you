@@ -1,9 +1,9 @@
 <template>
-  <div style="height: 100vh;clear: both;overflow: hidden;">
+  <div>
     <div id="loader"> </div>
     <div id="main" class="main" :class="bgColor">
       <div class="logo semi-trans" v-on:click="getquote">
-        <span v-html="totalQuotes"> </span><span> Motivos para te amar</span>
+        <span v-html="totalQuotes"> </span><span> motivos para te amar</span>
       </div>
       <div class="mantra-screen">
         <div class="mantra current" style="display: block;">
@@ -12,7 +12,7 @@
               <div class="credit-wrap"><span class="line"></span><span class="cboldup" v-html="idQuote"> </span><span
                   class="cboldup"> Escrito por</span>
                 <h3><span class="founder-name">Matheus Cezar</span><br><span class="founder-clink"><em>Para: Elizabeth
-                      Freitas<br>(Meu grande amor) </em></span></h3>
+                      Freitas</em></span></h3>
               </div>
               <div class="mantra-wrap">
                 <blockquote id="quote" v-html="quote">
