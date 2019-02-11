@@ -8,26 +8,53 @@ module.exports = {
    */
   head: {
     title: pkg.name,
-    meta: [
-      {
-        charset: "utf-8"
+    meta: [{
+        charset: 'utf-8'
       },
       {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1"
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
       },
       {
-        hid: "description",
-        name: "description",
+        hid: 'description',
+        name: 'description',
         content: pkg.description
+      },
+      {
+        name: 'msapplication-TileColor"',
+        content: '#000000'
+      },
+      {
+        name: 'theme-color"',
+        content: '#000000'
       }
     ],
-    link: [
+    link: [{
+        rel: 'apple-touch-icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
       {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
-      }
+        rel: 'icon',
+        type: 'image/x-icon',
+        sizes: '32x32',
+        href: '/favicon-32x32.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        sizes: '16x16',
+        href: '/favicon-16x16.ico'
+      },
+      {
+        rel: 'manifest',
+        href: '/site.webmanifest'
+      },
+      {
+        rel: 'mask-icon',
+        href: '/safari-pinned-tab.svg',
+        color: '#000000'
+      },
     ]
   },
 
@@ -35,13 +62,17 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: {
-    color: "#fff"
+    color: "#000"
   },
 
   /*
    ** Global CSS
    */
-  css: ["@/assets/css/main.css"],
+  css: [
+    "@/assets/css/fonts.css",
+    "@/assets/css/bgs.css",
+    "@/assets/css/main.css"
+  ],
 
   /*
    ** Plugins to load before mounting the App
