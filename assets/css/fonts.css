@@ -1,55 +1,46 @@
 ﻿@font-face {
     font-family: circular_book;
     src:
-        url(~/fonts/Circular/lineto-circular-book.eot);
-    src: url(~/fonts/Circular/lineto-circular-book-1.eot) format("embedded-opentype"), url(~/fonts/Circular/lineto-circular-book.woff) format("woff"),
-        url(~/fonts/Circular/lineto-circular-book.ttf) format("truetype"),
-        url(~/fonts/Circular/lineto-circular-book.svg) format("svg");
+        url(~assets/fonts/Circular/lineto-circular-book.eot);
+    src: url(~assets/fonts/Circular/lineto-circular-book-1.eot) format("embedded-opentype"), url(~assets/fonts/Circular/lineto-circular-book.woff) format("woff"),
+        url(~assets/fonts/Circular/lineto-circular-book.ttf) format("truetype"),
+        url(~assets/fonts/Circular/lineto-circular-book.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: circular_medium;
-    src: url(~/fonts/Circular/lineto-circular-medium.eot);
+    src: url(~assets/fonts/Circular/lineto-circular-medium.eot);
     src:
-        url(~/fonts/Circular/lineto-circular-medium-1.eot) format("embedded-opentype"),
-        url(~/fonts/Circular/lineto-circular-medium.woff) format("woff"),
-        url(~/fonts/Circular/lineto-circular-medium.ttf) format("truetype"),
-        url(~/fonts/Circular/lineto-circular-medium.svg) format("svg");
+        url(~assets/fonts/Circular/lineto-circular-medium-1.eot) format("embedded-opentype"),
+        url(~assets/fonts/Circular/lineto-circular-medium.woff) format("woff"),
+        url(~assets/fonts/Circular/lineto-circular-medium.ttf) format("truetype"),
+        url(~assets/fonts/Circular/lineto-circular-medium.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: circular_bold;
-    src: url(~/fonts/Circular/lineto-circular-bold.eot);
+    src: url(~assets/fonts/Circular/lineto-circular-bold.eot);
     src:
-        url(~/fonts/Circular/lineto-circular-bold-1.eot) format("embedded-opentype"),
-        url(~/fonts/Circular/lineto-circular-bold.woff) format("woff"),
-        url(~/fonts/Circular/lineto-circular-bold.ttf) format("truetype"),
-        url(~/fonts/Circular/lineto-circular-bold.svg) format("svg");
+        url(~assets/fonts/Circular/lineto-circular-bold-1.eot) format("embedded-opentype"),
+        url(~assets/fonts/Circular/lineto-circular-bold.woff) format("woff"),
+        url(~assets/fonts/Circular/lineto-circular-bold.ttf) format("truetype"),
+        url(~assets/fonts/Circular/lineto-circular-bold.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: circular_black;
-    src: url(~/fonts/Circular/lineto-circular-black.eot);
+    src: url(~assets/fonts/Circular/lineto-circular-black.eot);
     src:
-        url(~/fonts/Circular/lineto-circular-black-1.eot) format("embedded-opentype"),
-        url(~/fonts/Circular/lineto-circular-black.woff) format("woff"),
-        url(~/fonts/Circular/lineto-circular-black.ttf) format("truetype"),
-        url(~/fonts/Circular/lineto-circular-black.svg) format("svg");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: icomoon;
-    src: url(~/fonts/Icons/icomoon.eot);
-    src: url(~/fonts/Icons/icomoon.eot) format("embedded-opentype"), url(~/fonts/Icons/icomoon.ttf) format("truetype"),
-        url(~/fonts/Icons/icomoon.woff) format("woff"), url(~/fonts/Icons/icomoon.svg) format("svg");
+        url(~assets/fonts/Circular/lineto-circular-black-1.eot) format("embedded-opentype"),
+        url(~assets/fonts/Circular/lineto-circular-black.woff) format("woff"),
+        url(~assets/fonts/Circular/lineto-circular-black.ttf) format("truetype"),
+        url(~assets/fonts/Circular/lineto-circular-black.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
