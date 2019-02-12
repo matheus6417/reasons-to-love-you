@@ -11,8 +11,7 @@
  .wrapper {
      width: 100vw;
      height: 100vh;
-     /* position: fixed; */
-     /* margin: 0; */
+
      display: flex;
      vertical-align: middle;
      align-items: center;
@@ -142,34 +141,25 @@
      animation: rotation 1s ease-in-out infinite;
  }
 
- @-webkit-keyframes rotation {
-     0% {
-         width: 0;
-         height: 0;
-         -webkit-transform: rotate(0deg);
-         opacity: 1;
-     }
 
-     100% {
-         width: 100vw;
-         height: 100vw;
-         -webkit-transform: rotate(359deg);
-         opacity: 0;
-     }
- }
 
  @keyframes rotation {
      0% {
-         width: 0;
-         height: 0;
-         -webkit-transform: rotate(0deg);
+         width: 100px;
+         height: 100px;
+         /* -webkit-transform: rotate(0deg); */
          opacity: 1;
      }
 
+     50% {
+         width: 200px;
+         height: 200px;
+         /* -webkit-transform: rotate(359deg); */
+     }
+
      100% {
-         width: 100vw;
-         height: 100vw;
-         -webkit-transform: rotate(359deg);
-         opacity: 0;
+         width: 100px;
+         height: 100px;
+         /* -webkit-transform: rotate(659deg); */
      }
  }
