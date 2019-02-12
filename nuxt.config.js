@@ -71,6 +71,7 @@ module.exports = {
   css: [
     "@/assets/css/fonts.css",
     "@/assets/css/bgs.css",
+    "@/assets/css/loading.css",
     "@/assets/css/main.css"
   ],
 
