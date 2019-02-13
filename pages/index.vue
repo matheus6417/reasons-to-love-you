@@ -2099,9 +2099,9 @@
     },
     methods: {
       getquote: function () {
+        document.getElementById("main").style.opacity = "0";
         if (process.client) {
           var vm = this;
-          document.getElementById("main").style.opacity = "0";
           axios.get(
             "https://spreadsheets.google.com/feeds/list/1xoDmLyNhhAyjq_5SOU5-OStrZz3i1vkLIvsUNT-mvCI/od6/public/basic?alt=json"
           ).then(function (response) {
@@ -2114,9 +2114,9 @@
             vm.quote = content;
             vm.bgColor = vm.o[vm.o.length * Math.random() | 0];
             console.log("Motivo #" + num + ': "' + content + '"');
-            document.getElementById("main").style.opacity = "1";
-          }).catch(function (error) {
-            console.log(error);
+            setTimeout(function () {
+              document.getElementById("main").style.opacity = "1";
+            }, 1000);
           });
         }
       }
