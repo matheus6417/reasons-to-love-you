@@ -129,7 +129,7 @@
          center;
  }
 
- .spin svg {
+ .spin img {
      position: fixed;
      right: 0;
      left: 0;
@@ -146,20 +146,17 @@
  @keyframes rotation {
      0% {
          width: 100px;
-         height: 100px;
          /* -webkit-transform: rotate(0deg); */
          opacity: 1;
      }
 
      50% {
          width: 200px;
-         height: 200px;
          /* -webkit-transform: rotate(359deg); */
      }
 
      100% {
          width: 100px;
-         height: 100px;
          /* -webkit-transform: rotate(659deg); */
      }
  }
