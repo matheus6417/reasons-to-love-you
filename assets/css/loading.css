@@ -420,7 +420,7 @@
      position: relative;
      width: 350px;
      height: 523px;
-     background: url("https://media.flaticon.com/img/campaigns/valentines/popup/interface.svg") center center no-repeat;
+
      background-size: contain;
      /* transform: scale(1); */
      /* transition: all 250ms 500ms linear; */

@@ -16,27 +16,19 @@
                 <path class="symbol" d="M31.8,23.4s-3.2-5.8-8.4-5.3-9,7.7-4.5,14.7a34,34,0,0,0,11,10.6s12.8-4.3,15.2-11.6-1.5-12.5-5.4-12.5S31.8,23.4,31.8,23.4Z"></path>
               </svg>
             </div>
-            <div class="valentine__people">
-              <img id="valentine-person3" src="https://media.flaticon.com/img/campaigns/valentines/popup/person3.png"
-                alt="">
-              <img id="valentine-person2" src="https://media.flaticon.com/img/campaigns/valentines/popup/person2.png"
-                alt="">
-              <img id="valentine-person1" src="https://media.flaticon.com/img/campaigns/valentines/popup/person1.png"
-                alt="">
-            </div>
           </div>
           <div class="valentine__heart">
-            <img class="hearts" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart_1.svg">
-            <img class="hearts" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart_2.svg">
-            <img class="hearts" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart_3.svg">
-            <img class="hearts" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart_4.svg">
-            <img class="hearts" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart_5.svg">
-            <img class="hearts" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart_6.svg">
-            <img class="hearts" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart_7.svg">
-            <img class="heart" src="https://media.flaticon.com/img/campaigns/valentines/popup/heart.svg">
+            <img class="hearts" src="~assets/img/heart_1.svg" />
+            <img class="hearts" src="~assets/img/heart_2.svg" />
+            <img class="hearts" src="~assets/img/heart_3.svg" />
+            <img class="hearts" src="~assets/img/heart_4.svg" />
+            <img class="hearts" src="~assets/img/heart_5.svg" />
+            <img class="hearts" src="~assets/img/heart_6.svg" />
+            <img class="hearts" src="~assets/img/heart_7.svg" />
+            <img class="heart" src="~assets/img/heart.svg" />
             <!-- <div class="heart-text-1">It's a <b>Match!</b></div> -->
             <div class="spin">
-              <img src="~assets/img/face.png" alt="">
+              <img src="~assets/img/face.png" alt="" />
             </div>
           </div>
         </div>
@@ -51,13 +43,15 @@
           <div class="inner-wrapper">
             <div class="center-align">
               <div class="mantra-wrap">
-                <blockquote id="quote" v-html="quote">
-                </blockquote>
+                <blockquote id="quote" v-html="quote"></blockquote>
               </div>
-              <div class="credit-wrap"><span class="line"></span><span class="cboldup" v-html="idQuote"> </span><span
-                  class="cboldup"> Escrito por</span>
-                <h3><span class="founder-name">Matheus Cezar</span><br><span class="founder-clink"><em>Para: Elizabeth
-                      Freitas</em></span></h3>
+              <div class="credit-wrap">
+                <span class="line"></span><span class="cboldup" v-html="idQuote"> </span><span class="cboldup"> Escrito
+                  por</span>
+                <h3>
+                  <span class="founder-name">Matheus Cezar</span><br /><span class="founder-clink"><em>Para: Elizabeth
+                      Freitas</em></span>
+                </h3>
               </div>
             </div>
           </div>
@@ -67,7 +61,7 @@
   </div>
 </template>
 <script>
-  import axios from 'axios';
+  import axios from "axios";
   export default {
     name: "app",
     data() {
@@ -102,10 +96,10 @@
           "bgd2a6437f", "bg5fe2a818", "bg54654377", "bg0c0139a9", "bg44badff1", "bga51b3b52", "bg39fa3e62",
           "bgf4b73ded", "bgeba6f4be", "bgc1ac87c4", "bg0d9e365b", "bgc4890c8b"
         ]
-      }
+      };
     },
     mounted: function () {
-      this.getquote()
+      this.getquote();
     },
     methods: {
       getquote: function () {
@@ -122,7 +116,7 @@
             var content = vm.quote.content.$t.replace(/<(?:.|\n)*?>/gm, "");
             content = content.slice(9, content.lenght);
             vm.quote = content;
-            vm.bgColor = vm.o[vm.o.length * Math.random() | 0];
+            vm.bgColor = vm.o[(vm.o.length * Math.random()) | 0];
             console.log("Motivo #" + num + ': "' + content + '"');
             setTimeout(function () {
               document.getElementById("main").style.opacity = "1";
