@@ -302,13 +302,20 @@
  }
 
  .valentine__heart {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     width: 550px;
-     transform: translate(-50%, -50%);
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     vertical-align: middle;
      -webkit-animation: beat 1s ease-in-out infinite;
      animation: beat 1s ease-in-out infinite;
+     max-width: 600px;
+     margin: 0 auto;
+     max-height: 100vh;
  }
 
  .valentine__heart .heart,
@@ -450,11 +457,11 @@
  }
 
  .spin {
+     width: 20vh;
      display: flex;
      vertical-align: middle;
      align-items: center;
-     width: 300px;
-     margin: 0 auto;
+     max-width: 300px;
  }
 
 
