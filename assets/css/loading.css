@@ -6,6 +6,7 @@
      vertical-align: middle;
      align-items: center;
      overflow: hidden;
+     position: fixed;
  }
 
  .wrapper {
@@ -452,13 +453,13 @@
      display: flex;
      vertical-align: middle;
      align-items: center;
-     width: 30vw;
+     width: 300px;
      margin: 0 auto;
  }
 
 
  .spin img {
-     width: 30vw;
+     width: 300px;
      margin: 0 auto;
      -webkit-animation: beat 1s ease-in-out infinite;
      animation: beat 1s ease-in-out infinite;
@@ -469,17 +470,17 @@
 
  @keyframes beat {
      0% {
-         width: 100%;
+         transform: scale(1);
          /* -webkit-transform: rotate(0deg); */
      }
 
      50% {
-         width: 105%;
+         transform: scale(1.05);
          /* -webkit-transform: rotate(359deg); */
      }
 
      100% {
-         width: 100%;
+         transform: scale(1);
          /* -webkit-transform: rotate(659deg); */
      }
  }
