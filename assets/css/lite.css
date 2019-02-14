@@ -447,8 +447,7 @@ video {
 }
 
 #loader {
-    background: white;
-    top: 0;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
     bottom: 0;
     left: 0;
     right: 0;
