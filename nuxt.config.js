@@ -7,7 +7,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: '❤️ 1000+ motivos para amar ❤️',
     meta: [{
         charset: 'utf-8'
       },
