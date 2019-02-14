@@ -11,7 +11,6 @@
  .wrapper {
      width: 100vw;
      height: 100vh;
-
      display: flex;
      vertical-align: middle;
      align-items: center;
@@ -20,8 +19,8 @@
  .part {
      background: rgba(255, 0, 130, 0.0909090909);
      border-radius: 50%;
-     -webkit-animation: part 3s ease-in-out infinite;
-     animation: part 3s ease-in-out infinite;
+     /* -webkit-animation: part 3s ease-in-out infinite; */
+     /* animation: part 3s ease-in-out infinite; */
      position: fixed;
      margin: 0 auto;
      left: 0;
@@ -147,7 +146,6 @@
      0% {
          width: 100px;
          /* -webkit-transform: rotate(0deg); */
-         opacity: 1;
      }
 
      50% {
