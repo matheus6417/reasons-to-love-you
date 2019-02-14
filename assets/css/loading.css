@@ -1,493 +1,493 @@
-﻿ #loader {
-     margin: 0;
-     padding: 0;
-     background: #fff4f4;
-     display: flex;
-     vertical-align: middle;
-     align-items: center;
-     overflow: hidden;
-     position: fixed;
- }
-
- .wrapper {
-     width: 100vw;
-     height: 100vh;
-     display: flex;
-     vertical-align: middle;
-     align-items: center;
- }
-
- .bobjoll .mg-right-lv2 {
-     margin-right: 10px;
- }
-
- .bobjoll .mg-none {
-     margin: 0;
- }
-
- .bobjoll .strike {
-     text-decoration: line-through;
- }
-
- .bobjoll .button {
-     display: inline-block;
-     position: relative;
-     height: 44px;
-     padding: 0 1.4em;
-     border-radius: 2px;
-     box-shadow: inset 0px 0px 0px 0 #0f73ee;
-     color: white;
-     font-size: 16px;
-     font-weight: 500;
-     line-height: 44px;
-     cursor: pointer;
- }
-
- .bobjoll .button:hover {
-     box-shadow: inset 0px 0px 0px 0 #0c5cbe;
-     color: white;
-     text-decoration: none;
- }
-
- .bobjoll .button:active {
-     box-shadow: inset 0px 0px 0px 0 #c2c2c2;
- }
-
- .bobjoll .button--flat {
-     box-shadow: inset 0px 0px 0px 100px #0f73ee;
- }
-
- .bobjoll .button--flat:hover {
-     box-shadow: inset 0px 0px 0px 100px #0c5cbe;
-     color: white;
- }
-
- .bobjoll .button--flat:active {
-     box-shadow: inset 0px 0px 0px 100px #083b7b;
- }
-
- .bobjoll .button--md {
-     font-size: 16px;
-     height: 44px;
-     line-height: 44px;
- }
-
- .bobjoll .button--premium {
-     --color: white;
-     color: white;
- }
-
- .bobjoll .button--premium {
-     color: white;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 1px #fba707;
-     color: #fba707;
- }
-
- .bobjoll .button--premium {
-     color: #fba707;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #fca120;
- }
-
- .bobjoll .button--premium {
-     color: white;
-     box-shadow: inset 0px 0px 0px 100px #fca120;
- }
-
- .bobjoll .button--premium {
-     color: white;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #fba707;
- }
-
- .bobjoll .button--premium,
- .bobjoll .button--premium:hover {
-     box-shadow: inset 0px 0px 0px 100px #fca120;
-     color: white;
- }
-
- .bobjoll .button--premium {
-     color: white;
- }
-
- .bobjoll .button--premium,
- .bobjoll .button--premium:active {
-     box-shadow: inset 0px 0px 0px 100px #f69110;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #fca120 !important;
-     color: white !important;
- }
-
- .bobjoll .button--premium {
-     color: white !important;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #f69110 !important;
- }
-
- .bobjoll .button--premium {
-     --color: white;
-     color: white;
- }
-
- .bobjoll .button--premium {
-     color: white;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 1px #FCA120;
-     color: #f69110;
- }
-
- .bobjoll .button--premium {
-     color: #f69110;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #f69110;
- }
-
- .bobjoll .button--premium {
-     color: white;
-     box-shadow: inset 0px 0px 0px 100px #f69110;
- }
-
- .bobjoll .button--premium {
-     color: white;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #FCA120;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #f69110;
-     color: white;
- }
-
- .bobjoll .button--premium {
-     color: white;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #f69110;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #f69110 !important;
-     color: white !important;
- }
-
- .bobjoll .button--premium {
-     color: white !important;
- }
-
- .bobjoll .button--premium {
-     box-shadow: inset 0px 0px 0px 100px #f69110 !important;
- }
-
- .valentine.slide1 #valentine-person1,
- .valentine.slide2 #valentine-person2 {
-     opacity: 0;
-     transform: translate(-100%, -20%) scale(0.8) rotate(-20deg);
- }
-
- .valentine.slide3 .valentine__interface {
-     opacity: 0;
-     transform: scale(0.6);
- }
-
- .valentine.slide3 .valentine__heart .heart,
- .valentine.slide3 .valentine__heart .hearts {
-     opacity: 1;
-     transform: translate(-50%, -50%) scale(1);
- }
-
- .valentine.slide3 .valentine__heart .hearts {
-     animation: hearts 2000ms 750ms cubic-bezier(0.11, 0, 0, 1) infinite;
- }
-
- .valentine.slide3 .valentine__heart .heart-text-1 {
-     opacity: 1;
-     transform: translate(-50%, -50%) scale(1);
- }
-
- .valentine.slide4 .valentine__interface {
-     opacity: 0;
-     transform: scale(0.6);
- }
-
- .valentine.slide4 .valentine__heart .heart-text-1 {
-     opacity: 0;
-     transform: translate(-50%, -50%) scale(0.8);
-     transition: all 250ms linear;
- }
-
- .valentine.slide4 .valentine__heart .heart-text-2 {
-     opacity: 1;
-     transform: translate(-50%, -50%) scale(1);
- }
-
- .valentine__actions {
-     position: absolute;
-     bottom: 20px;
-     left: 50%;
-     transform: translateX(-50%);
- }
-
- .valentine__actions #valentine-action-yes .background,
- .valentine__actions #valentine-action-no .background {
-     fill: #fff;
- }
-
- .valentine__actions #valentine-action-yes .border,
- .valentine__actions #valentine-action-no .border {
-     fill: #e3e9ed;
- }
-
- .valentine__actions #valentine-action-yes *,
- .valentine__actions #valentine-action-no * {
-     transition: fill 250ms linear;
- }
-
- .valentine__actions #valentine-action-yes:hover .symbol,
- .valentine__actions #valentine-action-no:hover .symbol {
-     fill: #fff;
- }
-
- .valentine__actions #valentine-action-yes .symbol {
-     fill: #1273eb;
- }
-
- .valentine__actions #valentine-action-yes:hover .background,
- .valentine__actions #valentine-action-yes:hover .border {
-     fill: #69e781;
- }
-
- .valentine__actions #valentine-action-no .symbol {
-     fill: #fb5252;
- }
-
- .valentine__actions #valentine-action-no:hover .background,
- .valentine__actions #valentine-action-no:hover .border {
-     fill: #fb5252;
- }
-
- .valentine__people {
-     position: absolute;
-     top: 34px;
-     left: 26px;
-     width: 100%;
- }
-
- .valentine__people img {
-     opacity: 1;
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 296px;
-     height: auto;
-     transition: all 750ms cubic-bezier(1, 0, 0.83, 0.67);
-     transform: translate(0, 0) scale(1) rotate(0deg);
- }
-
- .valentine__heart {
-     position: fixed;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 100%;
-     display: flex;
-     align-items: center;
-     vertical-align: middle;
-     -webkit-animation: beat 1s ease-in-out infinite;
-     animation: beat 1s ease-in-out infinite;
-     max-width: 600px;
-     margin: 0 auto;
-     max-height: 100vh;
- }
-
- .valentine__heart .heart,
- .valentine__heart .hearts {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     opacity: 0;
-     width: 100%;
-     height: auto;
-     transform: translate(-50%, -50%) scale(0.6);
- }
-
- .valentine__heart .heart {
-     transition: all 500ms 500ms cubic-bezier(0.11, 0, 0, 1);
- }
-
- .valentine__heart .hearts {
-     transition: all 500ms 750ms cubic-bezier(0.11, 0, 0, 1);
- }
-
- .valentine__heart .heart-text-1,
- .valentine__heart .heart-text-2 {
-     opacity: 0;
-     /* position: absolute; */
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%) scale(0.8);
-     transition: all 250ms linear;
- }
-
- .valentine__heart .heart-text-1 {
-     font-size: 40px;
-     transition: all 250ms 500ms linear;
-     color: #fff;
-     text-align: center;
-     line-height: 1;
- }
-
- @media screen and (min-width: 480px) {
-     .valentine__heart .heart-text-1 {
-         font-size: calc(40px + 6 * (100vw - 480px) / 920);
-     }
- }
-
- @media screen and (min-width: 1400px) {
-     .valentine__heart .heart-text-1 {
-         font-size: 46px;
-     }
- }
-
- .valentine__heart .heart-text-1 b {
-     display: block;
-     margin: 0 auto;
- }
-
- .valentine__heart .heart-text-2 {
-     margin: 10px 0 0 0;
-     transform: translate(-50%, -50%) scale(1);
-     text-align: center;
- }
-
- .valentine__heart .heart-text-2 .button {
-     margin: 0 0 10px;
- }
-
- .valentine__heart .heart-text-2 .price-tagline {
-     margin: 0;
-     color: #0e2a47;
-     font-size: 18px;
- }
-
- .valentine__heart .heart-text-2 .price {
-     font-size: 56px;
-     margin: 0 0 10px;
-     color: #fff;
-     font-weight: 600;
-     line-height: 1;
- }
-
- @media screen and (min-width: 480px) {
-     .valentine__heart .heart-text-2 .price {
-         font-size: calc(56px + 18 * (100vw - 480px) / 920);
-     }
- }
-
- @media screen and (min-width: 1400px) {
-     .valentine__heart .heart-text-2 .price {
-         font-size: 74px;
-     }
- }
-
- .valentine__heart .heart-text-2 .discount {
-     color: #0e2a47;
-     font-size: 22px;
-     text-transform: uppercase;
- }
-
- .valentine__heart .heart-text-2 .discount b {
-     color: #fff;
- }
-
- .valentine__heart .heart-text-2 .expiry {
-     color: #fff;
-     font-size: 13px;
- }
-
- .valentine__interface {
-     opacity: 1;
-     position: relative;
-     width: 350px;
-     height: 523px;
-
-     background-size: contain;
-     /* transform: scale(1); */
-     /* transition: all 250ms 500ms linear; */
- }
-
- .strike {
-     text-decoration: line-through;
- }
-
- /*! CSS Used keyframes */
- @keyframes hearts {
-     0% {
-         opacity: 0;
-         transform: translate(-50%, -50%) scale(0.6);
-     }
-
-     60% {
-         opacity: 1;
-         transform: translate(-50%, -50%) scale(1);
-     }
-
-     100% {
-         opacity: 0;
-         transform: translate(-50%, -50%) scale(1.4);
-     }
- }
-
- .spin {
-     width: 20vh;
-     display: flex;
-     vertical-align: middle;
-     align-items: center;
-     max-width: 300px;
- }
-
-
- .spin img {
-     width: 300px;
-     margin: 0 auto;
-     -webkit-animation: beat 1s ease-in-out infinite;
-     animation: beat 1s ease-in-out infinite;
-     z-index: 9;
- }
-
-
-
- @keyframes beat {
-     0% {
-         transform: scale(1);
-         /* -webkit-transform: rotate(0deg); */
-     }
-
-     50% {
-         transform: scale(1.05);
-         /* -webkit-transform: rotate(359deg); */
-     }
-
-     100% {
-         transform: scale(1);
-         /* -webkit-transform: rotate(659deg); */
-     }
- }
+﻿#loader {
+  margin: 0;
+  padding: 0;
+  background: #fff4f4;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.bobjoll .mg-right-lv2 {
+  margin-right: 10px;
+}
+
+.bobjoll .mg-none {
+  margin: 0;
+}
+
+.bobjoll .strike {
+  text-decoration: line-through;
+}
+
+.bobjoll .button {
+  display: inline-block;
+  position: relative;
+  height: 44px;
+  padding: 0 1.4em;
+  border-radius: 2px;
+  box-shadow: inset 0px 0px 0px 0 #0f73ee;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.bobjoll .button:hover {
+  box-shadow: inset 0px 0px 0px 0 #0c5cbe;
+  color: white;
+  text-decoration: none;
+}
+
+.bobjoll .button:active {
+  box-shadow: inset 0px 0px 0px 0 #c2c2c2;
+}
+
+.bobjoll .button--flat {
+  box-shadow: inset 0px 0px 0px 100px #0f73ee;
+}
+
+.bobjoll .button--flat:hover {
+  box-shadow: inset 0px 0px 0px 100px #0c5cbe;
+  color: white;
+}
+
+.bobjoll .button--flat:active {
+  box-shadow: inset 0px 0px 0px 100px #083b7b;
+}
+
+.bobjoll .button--md {
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+}
+
+.bobjoll .button--premium {
+  --color: white;
+  color: white;
+}
+
+.bobjoll .button--premium {
+  color: white;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 1px #fba707;
+  color: #fba707;
+}
+
+.bobjoll .button--premium {
+  color: #fba707;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #fca120;
+}
+
+.bobjoll .button--premium {
+  color: white;
+  box-shadow: inset 0px 0px 0px 100px #fca120;
+}
+
+.bobjoll .button--premium {
+  color: white;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #fba707;
+}
+
+.bobjoll .button--premium,
+.bobjoll .button--premium:hover {
+  box-shadow: inset 0px 0px 0px 100px #fca120;
+  color: white;
+}
+
+.bobjoll .button--premium {
+  color: white;
+}
+
+.bobjoll .button--premium,
+.bobjoll .button--premium:active {
+  box-shadow: inset 0px 0px 0px 100px #f69110;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #fca120 !important;
+  color: white !important;
+}
+
+.bobjoll .button--premium {
+  color: white !important;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #f69110 !important;
+}
+
+.bobjoll .button--premium {
+  --color: white;
+  color: white;
+}
+
+.bobjoll .button--premium {
+  color: white;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 1px #fca120;
+  color: #f69110;
+}
+
+.bobjoll .button--premium {
+  color: #f69110;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #f69110;
+}
+
+.bobjoll .button--premium {
+  color: white;
+  box-shadow: inset 0px 0px 0px 100px #f69110;
+}
+
+.bobjoll .button--premium {
+  color: white;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #fca120;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #f69110;
+  color: white;
+}
+
+.bobjoll .button--premium {
+  color: white;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #f69110;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #f69110 !important;
+  color: white !important;
+}
+
+.bobjoll .button--premium {
+  color: white !important;
+}
+
+.bobjoll .button--premium {
+  box-shadow: inset 0px 0px 0px 100px #f69110 !important;
+}
+
+.valentine.slide1 #valentine-person1,
+.valentine.slide2 #valentine-person2 {
+  opacity: 0;
+  transform: translate(-100%, -20%) scale(0.8) rotate(-20deg);
+}
+
+.valentine.slide3 .valentine__interface {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.valentine.slide3 .valentine__heart .heart,
+.valentine.slide3 .valentine__heart .hearts {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.valentine.slide3 .valentine__heart .hearts {
+  animation: hearts 2000ms 750ms cubic-bezier(0.11, 0, 0, 1) infinite;
+}
+
+.valentine.slide3 .valentine__heart .heart-text-1 {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.valentine.slide4 .valentine__interface {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.valentine.slide4 .valentine__heart .heart-text-1 {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 250ms linear;
+}
+
+.valentine.slide4 .valentine__heart .heart-text-2 {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.valentine__actions {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.valentine__actions #valentine-action-yes .background,
+.valentine__actions #valentine-action-no .background {
+  fill: #fff;
+}
+
+.valentine__actions #valentine-action-yes .border,
+.valentine__actions #valentine-action-no .border {
+  fill: #e3e9ed;
+}
+
+.valentine__actions #valentine-action-yes *,
+.valentine__actions #valentine-action-no * {
+  transition: fill 250ms linear;
+}
+
+.valentine__actions #valentine-action-yes:hover .symbol,
+.valentine__actions #valentine-action-no:hover .symbol {
+  fill: #fff;
+}
+
+.valentine__actions #valentine-action-yes .symbol {
+  fill: #1273eb;
+}
+
+.valentine__actions #valentine-action-yes:hover .background,
+.valentine__actions #valentine-action-yes:hover .border {
+  fill: #69e781;
+}
+
+.valentine__actions #valentine-action-no .symbol {
+  fill: #fb5252;
+}
+
+.valentine__actions #valentine-action-no:hover .background,
+.valentine__actions #valentine-action-no:hover .border {
+  fill: #fb5252;
+}
+
+.valentine__people {
+  position: absolute;
+  top: 34px;
+  left: 26px;
+  width: 100%;
+}
+
+.valentine__people img {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 296px;
+  height: auto;
+  transition: all 750ms cubic-bezier(1, 0, 0.83, 0.67);
+  transform: translate(0, 0) scale(1) rotate(0deg);
+}
+
+.valentine__heart {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  -webkit-animation: beat 1s ease-in-out infinite;
+  animation: beat 1s ease-in-out infinite;
+  max-width: 600px;
+  margin: 0 auto;
+  max-height: 100vh;
+}
+
+.valentine__heart .heart,
+.valentine__heart .hearts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.valentine__heart .heart {
+  transition: all 500ms 500ms cubic-bezier(0.11, 0, 0, 1);
+}
+
+.valentine__heart .hearts {
+  transition: all 500ms 750ms cubic-bezier(0.11, 0, 0, 1);
+}
+
+.valentine__heart .heart-text-1,
+.valentine__heart .heart-text-2 {
+  opacity: 0;
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 250ms linear;
+}
+
+.valentine__heart .heart-text-1 {
+  font-size: 40px;
+  transition: all 250ms 500ms linear;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .valentine__heart .heart-text-1 {
+    font-size: calc(40px + 6 * (100vw - 480px) / 920);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .valentine__heart .heart-text-1 {
+    font-size: 46px;
+  }
+}
+
+.valentine__heart .heart-text-1 b {
+  display: block;
+  margin: 0 auto;
+}
+
+.valentine__heart .heart-text-2 {
+  margin: 10px 0 0 0;
+  transform: translate(-50%, -50%) scale(1);
+  text-align: center;
+}
+
+.valentine__heart .heart-text-2 .button {
+  margin: 0 0 10px;
+}
+
+.valentine__heart .heart-text-2 .price-tagline {
+  margin: 0;
+  color: #0e2a47;
+  font-size: 18px;
+}
+
+.valentine__heart .heart-text-2 .price {
+  font-size: 56px;
+  margin: 0 0 10px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .valentine__heart .heart-text-2 .price {
+    font-size: calc(56px + 18 * (100vw - 480px) / 920);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .valentine__heart .heart-text-2 .price {
+    font-size: 74px;
+  }
+}
+
+.valentine__heart .heart-text-2 .discount {
+  color: #0e2a47;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.valentine__heart .heart-text-2 .discount b {
+  color: #fff;
+}
+
+.valentine__heart .heart-text-2 .expiry {
+  color: #fff;
+  font-size: 13px;
+}
+
+.valentine__interface {
+  opacity: 1;
+  position: relative;
+  width: 350px;
+  height: 523px;
+
+  background-size: contain;
+  /* transform: scale(1); */
+  /* transition: all 250ms 500ms linear; */
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+/*! CSS Used keyframes */
+@keyframes hearts {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+
+.spin {
+  width: 100%;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  /* max-width: 300px; */
+  margin: 0;
+  text-align: center;
+}
+
+.spin img {
+  width: fit-content;
+  margin: 0 auto;
+  -webkit-animation: beat 1s ease-in-out infinite;
+  animation: beat 1s ease-in-out infinite;
+  z-index: 9;
+  max-width: 300px;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    /* -webkit-transform: rotate(0deg); */
+  }
+
+  50% {
+    transform: scale(1.05);
+    /* -webkit-transform: rotate(359deg); */
+  }
+
+  100% {
+    transform: scale(1);
+    /* -webkit-transform: rotate(659deg); */
+  }
+}
