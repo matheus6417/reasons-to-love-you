@@ -20,16 +20,16 @@
         </div>
       </div>
     </div>
-    <div id="main" class="main" :class="bgColor">
+    <div id="main" class="main" :class="bgColor" v-on:click="getquote">
       <div class="logo semi-trans" >
         <span v-html="totalQuotes"> </span><span> motivos para te amar</span>
       </div>
-      <div class="mantra-screen">
+      <div class="mantra-screen" >
         <div class="mantra current" style="display: block;">
           <div class="inner-wrapper">
             <div class="center-align">
               <div class="mantra-wrap">
-                <blockquote id="quote" v-html="quote"  v-on:click="getquote"></blockquote>
+                <blockquote id="quote" v-html="quote"  ></blockquote>
               </div>
               <div class="credit-wrap">
                 <span class="line"></span><span class="cboldup" v-html="idQuote"> </span><span class="cboldup"> Escrito
