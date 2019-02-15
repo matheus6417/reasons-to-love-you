@@ -1,7 +1,8 @@
 ﻿*,
 :after,
 :before {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     user-select: none;
     -webkit-user-select: none;
@@ -12,6 +13,7 @@
 
 #main {
     will-change: opacity;
+    -webkit-transition: opacity 1s ease;
     transition: opacity 1s ease;
 }
 
@@ -174,7 +176,6 @@ summary {
 
 @media all and (-webkit-min-device-pixel-ratio:2) and (max-width:767px),
 all and (min--moz-device-pixel-ratio:2) and (max-width:767px),
-all and (-o-min-device-pixel-ratio:2 / 1) and (max-width:767px),
 all and (min-device-pixel-ratio:2) and (max-width:767px),
 all and (min-resolution:192dpi) and (max-width:767px),
 all and (min-resolution:2dppx) and (max-width:767px) {
@@ -189,7 +190,6 @@ all and (min-resolution:2dppx) and (max-width:767px) {
 
 @media all and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
 all and (min--moz-device-pixel-ratio:2) and (min-width:768px),
-all and (-o-min-device-pixel-ratio:2 / 1) and (min-width:768px),
 all and (min-device-pixel-ratio:2) and (min-width:768px),
 all and (min-resolution:192dpi) and (min-width:768px),
 all and (min-resolution:2dppx) and (min-width:768px) {
@@ -247,10 +247,6 @@ dd,
 li,
 p {
     line-height: 1.5em
-}
-
-::-moz-selection {
-    background-color: #ddd
 }
 
 ::selection {
@@ -447,6 +443,7 @@ video {
 }
 
 #loader {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#48c6ef), to(#6f86d6));
     background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
     bottom: 0;
     left: 0;
@@ -650,6 +647,7 @@ video {
     max-width: 50%;
     margin-left: -70px;
     cursor: pointer;
+    -webkit-transition: all .35s cubic-bezier(.23, 1, .32, 1);
     transition: all .35s cubic-bezier(.23, 1, .32, 1);
     font-family: circular_black, Helvetica, sans-serif;
     font-weight: lighter;
@@ -700,7 +698,6 @@ video {
 
 @media all and (-webkit-min-device-pixel-ratio:2) and (max-width:767px),
 all and (min--moz-device-pixel-ratio:2) and (max-width:767px),
-all and (-o-min-device-pixel-ratio:2 / 1) and (max-width:767px),
 all and (min-device-pixel-ratio:2) and (max-width:767px),
 all and (min-resolution:192dpi) and (max-width:767px),
 all and (min-resolution:2dppx) and (max-width:767px) {
@@ -715,7 +712,6 @@ all and (min-resolution:2dppx) and (max-width:767px) {
 
 @media all and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
 all and (min--moz-device-pixel-ratio:2) and (min-width:768px),
-all and (-o-min-device-pixel-ratio:2 / 1) and (min-width:768px),
 all and (min-device-pixel-ratio:2) and (min-width:768px),
 all and (min-resolution:192dpi) and (min-width:768px),
 all and (min-resolution:2dppx) and (min-width:768px) {
@@ -967,7 +963,8 @@ all and (min-resolution:2dppx) and (min-width:768px) {
     width: 100%;
     font-size: 3.375em;
     line-height: 1.05em;
-    filter: invert(0) grayscale(1) drop-shadow(0.01em .01em 2em black);
+    -webkit-filter: invert(0) grayscale(1) drop-shadow(0.01em .01em 2em black);
+            filter: invert(0) grayscale(1) drop-shadow(0.01em .01em 2em black);
 }
 
 @media all and (max-width:767px) {
@@ -988,7 +985,8 @@ all and (min-resolution:2dppx) and (min-width:768px) {
     text-align:
         right;
     opacity: 0.74;
-    filter: invert(0) grayscale(1) drop-shadow(0.01em .01em 3em black);
+    -webkit-filter: invert(0) grayscale(1) drop-shadow(0.01em .01em 3em black);
+            filter: invert(0) grayscale(1) drop-shadow(0.01em .01em 3em black);
 }
 
 @media all and (max-width:767px) {

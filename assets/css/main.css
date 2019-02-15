@@ -7,13 +7,15 @@
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 :after,
 :before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   user-select: none;
   -webkit-user-select: none;
@@ -24,6 +26,7 @@
 
 #main {
   will-change: opacity;
+  -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
 
@@ -69,7 +72,8 @@ blockquote:before {
 *,
 :after,
 :before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -149,6 +153,7 @@ blockquote {
 
 .semi-trans {
   opacity: 0.3;
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -168,6 +173,7 @@ blockquote {
   width: 140px;
   margin-left: -70px;
   cursor: pointer;
+  -webkit-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
   font-family: circular_black, Helvetica, sans-serif;
   font-weight: lighter;
