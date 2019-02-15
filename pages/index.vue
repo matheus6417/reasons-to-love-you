@@ -21,10 +21,10 @@
       </div>
     </div>
     <div id="main" class="main" :class="bgColor">
-      <div class="logo semi-trans" v-on:click="getquote">
+      <div class="logo semi-trans" >
         <span v-html="totalQuotes"> </span><span> motivos para te amar</span>
       </div>
-      <div class="mantra-screen">
+      <div class="mantra-screen" v-on:click="getquote">
         <div class="mantra current" style="display: block;">
           <div class="inner-wrapper">
             <div class="center-align">

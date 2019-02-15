@@ -643,7 +643,6 @@ video {
 .logo {
     opacity: 0.22;
     text-align: center;
-    z-index: 9;
     position: fixed;
     top: 25px;
     left: 50%;
@@ -864,7 +863,10 @@ all and (min-resolution:2dppx) and (min-width:768px) {
     position: relative;
     overflow: visible
 }
-
+.logo:active {
+    background: none;
+    outline: none;
+}
 @media all and (max-width:767px) {
     .mantra-screen {
         background-size: 70%;
