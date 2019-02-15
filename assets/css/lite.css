@@ -862,7 +862,7 @@ all and (min-resolution:2dppx) and (min-width:768px) {
     width: 100%;
     background: url(~assets/img/quotes.png) -50px center no-repeat;
     position: relative;
-    overflow: hidden
+    overflow: visible
 }
 
 @media all and (max-width:767px) {
