@@ -1338,3 +1338,31 @@ all and (min-resolution:2dppx) and (min-width:768px) {
 .mantra-screen .tools-wrap .social-share a:hover {
     background-color: #000
 }
+
+.actions-row {
+    position: fixed;
+    height: 70px;
+    background: white;
+    border-radius: 70px;
+    top: auto;
+    bottom: 0;
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    margin: 5vw;
+    justify-content: space-around;
+    box-shadow: -1px 6px 12px 2px rgba(0, 0, 0, 0.11);
+    z-index: 99999999999999999999999;
+}
+
+.animations-page-grid__thumb {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 100%;
+    cursor: pointer
+}

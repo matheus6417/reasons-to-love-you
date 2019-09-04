@@ -4,35 +4,50 @@
       <div class="wrapper">
         <div class="valentine popup-web slide1 slide2 slide3 slide4">
           <div class="valentine__heart">
-            <img class="hearts" src="~assets/img/heart_1.svg" />
-            <img class="hearts" src="~assets/img/heart_2.svg" />
-            <img class="hearts" src="~assets/img/heart_3.svg" />
-            <img class="hearts" src="~assets/img/heart_4.svg" />
-            <img class="hearts" src="~assets/img/heart_5.svg" />
-            <img class="hearts" src="~assets/img/heart_6.svg" />
-            <img class="hearts" src="~assets/img/heart_7.svg" />
-            <img class="heart" src="~assets/img/heart.svg" />
+            <img class="hearts"
+                 src="~assets/img/heart_1.svg" />
+            <img class="hearts"
+                 src="~assets/img/heart_2.svg" />
+            <img class="hearts"
+                 src="~assets/img/heart_3.svg" />
+            <img class="hearts"
+                 src="~assets/img/heart_4.svg" />
+            <img class="hearts"
+                 src="~assets/img/heart_5.svg" />
+            <img class="hearts"
+                 src="~assets/img/heart_6.svg" />
+            <img class="hearts"
+                 src="~assets/img/heart_7.svg" />
+            <img class="heart"
+                 src="~assets/img/heart.svg" />
             <!-- <div class="heart-text-1">It's a <b>Match!</b></div> -->
             <div class="spin">
-              <img src="~assets/img/face.png" alt="" />
+              <img src="~assets/img/face.png"
+                   alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="main" class="main" :class="bgColor" v-on:click="getquote">
-      <div class="logo semi-trans" >
+    <div id="main"
+         class="main"
+         :class="bgColor"
+         v-on:click="getquote">
+      <div class="logo semi-trans">
         <span v-html="totalQuotes"> </span><span> motivos para te amar</span>
       </div>
-      <div class="mantra-screen" >
-        <div class="mantra current" style="display: block;">
+      <div class="mantra-screen">
+        <div class="mantra current"
+             style="display: block;">
           <div class="inner-wrapper">
             <div class="center-align">
               <div class="mantra-wrap">
-                <blockquote id="quote" v-html="quote"  ></blockquote>
+                <blockquote id="quote"
+                            v-html="quote"></blockquote>
               </div>
               <div class="credit-wrap">
-                <span class="line"></span><span class="cboldup" v-html="idQuote"> </span><span class="cboldup"> Escrito
+                <span class="line"></span><span class="cboldup"
+                      v-html="idQuote"> </span><span class="cboldup"> Escrito
                   por</span>
                 <h3>
                   <span class="founder-name">Matheus Cezar</span><br /><span class="founder-clink"><em>Para: Elizabeth
@@ -41,6 +56,28 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="actions-row">
+
+          <figure @click.stop="setReaction(1)" class="animations-page-grid__thumb"
+                  style="background-image: url('r2.gif');">
+          </figure>
+          <figure @click.stop="setReaction(2)"
+                  class="animations-page-grid__thumb"
+                  style="background-image: url('r3.gif');">
+          </figure>
+          <figure @click.stop="setReaction(3)"
+                  class="animations-page-grid__thumb"
+                  style="background-image: url('r1.gif');">
+          </figure>
+          <figure @click.stop="setReaction(4)"
+                  class="animations-page-grid__thumb"
+                  style="background-image: url('r4.gif');">
+          </figure>
+          <figure @click.stop="setReaction(5)"
+                  class="animations-page-grid__thumb"
+                  style="background-image: url('r5.gif');">
+          </figure>
         </div>
       </div>
     </div>
@@ -88,6 +125,10 @@
       this.getquote();
     },
     methods: {
+      setReaction(reaction){
+        console.log(reaction);
+
+      },
       getquote: function () {
         document.getElementById("main").style.opacity = "0";
         if (process.client) {
@@ -110,4 +151,5 @@
       }
     }
   };
+
 </script>
