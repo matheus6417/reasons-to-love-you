@@ -1364,5 +1364,12 @@ all and (min-resolution:2dppx) and (min-width:768px) {
     width: 100%;
     background-position: center;
     height: 100%;
-    cursor: pointer
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.animations-page-grid__thumb:active {
+    background-color: transparent;
+    transform: scale(1.1) translateY(-4px);
+    transition: all 200ms;
 }

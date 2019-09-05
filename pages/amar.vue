@@ -58,23 +58,28 @@
           </div>
         </div>
         <div class="actions-row">
-
-          <figure @click.stop="setReaction(1)" class="animations-page-grid__thumb"
+          <figure id="r1"
+                  @click.stop="setReaction(1)"
+                  class="animations-page-grid__thumb"
                   style="background-image: url('r2.gif');">
           </figure>
-          <figure @click.stop="setReaction(2)"
+          <figure id="r2"
+                  @click.stop="setReaction(2)"
                   class="animations-page-grid__thumb"
                   style="background-image: url('r3.gif');">
           </figure>
-          <figure @click.stop="setReaction(3)"
+          <figure id="r3"
+                  @click.stop="setReaction(3)"
                   class="animations-page-grid__thumb"
                   style="background-image: url('r1.gif');">
           </figure>
-          <figure @click.stop="setReaction(4)"
+          <figure id="r4"
+                  @click.stop="setReaction(4)"
                   class="animations-page-grid__thumb"
                   style="background-image: url('r4.gif');">
           </figure>
-          <figure @click.stop="setReaction(5)"
+          <figure id="r5"
+                  @click.stop="setReaction(5)"
                   class="animations-page-grid__thumb"
                   style="background-image: url('r5.gif');">
           </figure>
@@ -89,6 +94,7 @@
     name: "app",
     data() {
       return {
+        allquotes: {},
         totalQuotes: "",
         quote: "",
         idQuote: "",
@@ -118,36 +124,64 @@
           "bge133631b", "bg070811d1", "bge4c46acb", "bgfc504f88", "bgaf908f7c", "bg9ed8353b", "bg12a3468d",
           "bgd2a6437f", "bg5fe2a818", "bg54654377", "bg0c0139a9", "bg44badff1", "bga51b3b52", "bg39fa3e62",
           "bgf4b73ded", "bgeba6f4be", "bgc1ac87c4", "bg0d9e365b", "bgc4890c8b"
-        ]
+        ],
+        reactedQuotes: {},
       };
     },
     mounted: function () {
-      this.getquote();
+      document.getElementById("main").style.opacity = "0";
+
+      let vm = this;
+      this.reactedQuotes = JSON.parse(window.localStorage.getItem('reactedQuotes'));
+      console.log(this.reactedQuotes);
+      if (process.client) {
+        axios.get(
+          "https://spreadsheets.google.com/feeds/list/1xoDmLyNhhAyjq_5SOU5-OStrZz3i1vkLIvsUNT-mvCI/od6/public/basic?alt=json"
+        ).then(function (response) {
+          vm.allquotes = response.data.feed.entry
+          setTimeout(function () {
+            vm.getquote();
+          }, 300);
+
+        });
+      }
     },
     methods: {
-      setReaction(reaction){
-        console.log(reaction);
+      setReaction(reaction) {
+        let vm = this;
+        let idProp = this.idQuote
+        this.reactedQuotes[idProp] = reaction;
+        window.localStorage.setItem('reactedQuotes', JSON.stringify(this.reactedQuotes));
+        setTimeout(function () {
+          vm.getquote();
+        }, 300);
 
       },
-      getquote: function () {
+      getquote() {
+        let vm = this;
         document.getElementById("main").style.opacity = "0";
-        if (process.client) {
-          var vm = this;
-          axios.get(
-            "https://spreadsheets.google.com/feeds/list/1xoDmLyNhhAyjq_5SOU5-OStrZz3i1vkLIvsUNT-mvCI/od6/public/basic?alt=json"
-          ).then(function (response) {
-            vm.totalQuotes = response.data.feed.entry.length;
-            var num = Math.floor(Math.random() * vm.totalQuotes);
-            vm.quote = response.data.feed.entry[num];
-            vm.idQuote = "#" + num;
-            var content = vm.quote.content.$t;
+
+        setTimeout(function () {
+          vm.totalQuotes = vm.allquotes.length;
+          console.log(vm.totalQuotes);
+          let num = Math.floor(Math.random() * vm.totalQuotes);
+          console.log(num);
+          vm.quote = vm.allquotes[num];
+          vm.idQuote = "#" + num;
+          console.log(vm.reactedQuotes.hasOwnProperty(vm.idQuote));
+
+          if (vm.reactedQuotes.hasOwnProperty(vm.idQuote)) {
+            vm.getquote();
+          } else {
+            let content = vm.quote.content.$t;
             vm.quote = content.slice(9, content.lenght);
             vm.bgColor = vm.o[(vm.o.length * Math.random()) | 0];
             setTimeout(function () {
               document.getElementById("main").style.opacity = "1";
-            }, 2000);
-          });
-        }
+            }, 1300);
+          }
+        }, 700);
+
       }
     }
   };
