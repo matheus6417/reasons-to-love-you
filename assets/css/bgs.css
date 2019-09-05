@@ -75,7 +75,7 @@
 }
 
 .bg41a75efc {
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #5689a3 100%)
 }
 
 .bg12a22a86 {
@@ -380,7 +380,7 @@
 }
 
 .bge3490bbe {
-    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%)
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #ffc95d 75%, #e9e9e7 100%)
 }
 
 .bgb5baac8a {
@@ -420,7 +420,7 @@
 }
 
 .bg15d443c0 {
-    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%)
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #4fff75 100%)
 }
 
 .bg212ad96e {
@@ -456,7 +456,7 @@
 }
 
 .bg281ec4f4 {
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)
+    background-image: linear-gradient(to top, #c1adff 0%, #dad4ec 1%, #f3e7e9 100%)
 }
 
 .bg0b52c4d2 {
@@ -474,7 +474,7 @@
 }
 
 .bg30ab018a {
-    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%),
+    background-image: radial-gradient(73% 147%, rgb(255, 188, 81) 59%, #ECE2DF 100%),
         radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
 }
 
@@ -498,7 +498,7 @@
 
 .bg1db7d585 {
     background-image:
-        linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%)
+        linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e9a9a9 26%, #efefef 48%, #2dd649 75%, #bcbcbc 100%)
 }
 
 .bg29e88a6c {
@@ -570,7 +570,7 @@
 
 .bga2a651f6 {
     background-image: linear-gradient(to top, #dfe9f3 0%,
-        white 100%)
+        rgb(184, 112, 112) 100%)
 }
 
 .bge8b77f5e {
@@ -680,7 +680,7 @@
 
 .bg7f61aa6b {
     background-image:
-        linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)
+        linear-gradient(-225deg, rgb(255, 147, 255) 0%, #D7FFFE 100%)
 }
 
 .bg1ae700bf {
