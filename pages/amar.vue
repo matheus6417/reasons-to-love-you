@@ -128,12 +128,10 @@
         reactedQuotes: {},
       };
     },
-    mounted: function () {
+    mounted() {
       document.getElementById("main").style.opacity = "0";
-
       let vm = this;
-      this.reactedQuotes = JSON.parse(window.localStorage.getItem('reactedQuotes'));
-      console.log(this.reactedQuotes);
+      localStorage.getItem('reactedQuotes') ? vm.reactedQuotes = JSON.parse(localStorage.getItem('reactedQuotes')) : console.log("no reacted yet");
       if (process.client) {
         axios.get(
           "https://spreadsheets.google.com/feeds/list/1xoDmLyNhhAyjq_5SOU5-OStrZz3i1vkLIvsUNT-mvCI/od6/public/basic?alt=json"
@@ -142,7 +140,6 @@
           setTimeout(function () {
             vm.getquote();
           }, 300);
-
         });
       }
     },
@@ -150,28 +147,26 @@
       setReaction(reaction) {
         let vm = this;
         let idProp = this.idQuote
-        this.reactedQuotes[idProp] = reaction;
-        window.localStorage.setItem('reactedQuotes', JSON.stringify(this.reactedQuotes));
+        vm.reactedQuotes[idProp] = reaction;
+        localStorage.setItem('reactedQuotes', JSON.stringify(this.reactedQuotes));
         setTimeout(function () {
           vm.getquote();
         }, 300);
 
       },
-      getquote() {
+      getquote() {1
         let vm = this;
         document.getElementById("main").style.opacity = "0";
-
         setTimeout(function () {
           vm.totalQuotes = vm.allquotes.length;
-          console.log(vm.totalQuotes);
           let num = Math.floor(Math.random() * vm.totalQuotes);
-          console.log(num);
           vm.quote = vm.allquotes[num];
           vm.idQuote = "#" + num;
-          console.log(vm.reactedQuotes.hasOwnProperty(vm.idQuote));
-
+          // console.log(vm.reactedQuotes.hasOwnProperty(vm.idQuote));
+          // console.log(vm.reactedQuotes[vm.idQuote]);
+          // console.log(vm.idQuote);
           if (vm.reactedQuotes.hasOwnProperty(vm.idQuote)) {
-            vm.getquote();
+           vm.getquote() 
           } else {
             let content = vm.quote.content.$t;
             vm.quote = content.slice(9, content.lenght);
