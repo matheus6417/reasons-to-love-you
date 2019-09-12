@@ -154,17 +154,6 @@ summary {
 }
 
 
-.full-logo {
-    background-image:
-        url(~assets/img/icons-s5cd628bebb.png);
-    background-position: -92px -284px;
-    background-repeat: no-repeat;
-    overflow:
-        hidden;
-    display: inline-block;
-    height: 72px;
-    width: 115px
-}
 
 @media all and (max-width:767px) {
     .full-logo {
@@ -174,32 +163,7 @@ summary {
     }
 }
 
-@media all and (-webkit-min-device-pixel-ratio:2) and (max-width:767px),
-all and (min--moz-device-pixel-ratio:2) and (max-width:767px),
-all and (min-device-pixel-ratio:2) and (max-width:767px),
-all and (min-resolution:192dpi) and (max-width:767px),
-all and (min-resolution:2dppx) and (max-width:767px) {
-    .full-logo {
-        background-image:
-            url(~assets/img/icons2x-s667950b8d3.png) !important;
-        background-size: 300px 480px !important;
-        background-position:
-            -105px -423px !important
-    }
-}
 
-@media all and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
-all and (min--moz-device-pixel-ratio:2) and (min-width:768px),
-all and (min-device-pixel-ratio:2) and (min-width:768px),
-all and (min-resolution:192dpi) and (min-width:768px),
-all and (min-resolution:2dppx) and (min-width:768px) {
-    .full-logo {
-        background-image:
-            url(~assets/img/icons2x-s667950b8d3.png);
-        background-size: 300px 480px;
-        background-position: -93px -269px
-    }
-}
 
 
 
@@ -678,15 +642,6 @@ video {
     }
 }
 
-.logo.about-open .full-logo {
-    background-image: url(~assets/img/icons-s5cd628bebb.png);
-    background-position: -80px -186px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: inline-block;
-    height: 88px;
-    width: 140px
-}
 
 @media all and (max-width:767px) {
     .logo.about-open .full-logo {
@@ -696,32 +651,7 @@ video {
     }
 }
 
-@media all and (-webkit-min-device-pixel-ratio:2) and (max-width:767px),
-all and (min--moz-device-pixel-ratio:2) and (max-width:767px),
-all and (min-device-pixel-ratio:2) and (max-width:767px),
-all and (min-resolution:192dpi) and (max-width:767px),
-all and (min-resolution:2dppx) and (max-width:767px) {
-    .logo.about-open .full-logo {
-        background-image:
-            url(~assets/img/icons2x-s667950b8d3.png) !important;
-        background-size: 300px 480px !important;
-        background-position:
-            -93px -346px !important
-    }
-}
 
-@media all and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
-all and (min--moz-device-pixel-ratio:2) and (min-width:768px),
-all and (min-device-pixel-ratio:2) and (min-width:768px),
-all and (min-resolution:192dpi) and (min-width:768px),
-all and (min-resolution:2dppx) and (min-width:768px) {
-    .logo.about-open .full-logo {
-        background-image:
-            url(~assets/img/icons2x-s667950b8d3.png);
-        background-size: 300px 480px;
-        background-position: -80px -80px
-    }
-}
 
 .footer {
     z-index: 5555;
