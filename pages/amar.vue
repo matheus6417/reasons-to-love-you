@@ -78,7 +78,7 @@
               :class="{'slide-out-fwd-top' : reactedWith === 3}"
               @click.stop="setReaction(3)"
               class="animations-page-grid__thumb"
-              style="background-image: url('/r1.gif');"
+              style="background-image: url('/r1.gif');background-size: 44px;"
             ></figure>
           </div>
           <div class="reaction-wrapper">
@@ -96,7 +96,7 @@
               :class="{'slide-out-fwd-top' : reactedWith === 5}"
               @click.stop="setReaction(5)"
               class="animations-page-grid__thumb"
-              style="background-image: url('/r5.gif');"
+              style="background-image: url('/r5.gif');background-size: 44px;  "
             ></figure>
           </div>
         </div>

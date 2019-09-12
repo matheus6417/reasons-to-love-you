@@ -874,7 +874,7 @@ video {
     margin-left:
         -65px;
     width: 55%;
-    max-width: 730px;
+    max-width: 100%;
     padding-right: 50px
 }
 
@@ -1279,12 +1279,14 @@ video {
     background: white;
     border-radius: 70px;
     top: auto;
+    right: 0;
+    left: 0;
     bottom: 0;
     margin: auto;
-    width: -webkit-fill-available;
-    max-width: 400px;
+    width: 400px;
+    max-width: 90vw;
     display: flex;
-    margin: 0 3vw 2vh;
+    margin: 0 auto 3vh;
     justify-content: space-around;
     box-shadow: -1px 6px 12px 2px rgba(0, 0, 0, 0.11);
     z-index: 99999999999999999999999;
@@ -1340,3 +1342,5 @@ video {
     }
   }
   
+  ::-moz-selection { background: transparent!important; }
+::selection { background: transparent!important; }
