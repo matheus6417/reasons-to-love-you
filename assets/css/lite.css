@@ -800,27 +800,24 @@ video {
     }
 }
 
-.mantra-screen .inner-wrapper {
-    display: table;
-    height: 100%;
-    width: 100%
-}
-
-@media all and (max-width:767px) {
     .mantra-screen .inner-wrapper {
-        display: block
+        display: flex;
+        height: 100%;
+        width: 100%;
     }
-}
+
 
 .mantra-screen .center-align {
     display: table-cell;
     vertical-align: middle;
+    padding-bottom: 70px;
+    max-width: 90vw;
+    margin: auto;
 }
 
 @media all and (max-width:767px) {
     .mantra-screen .center-align {
         display: block;
-        padding-bottom: 20px;
     }
 }
 .reaction-wrapper {
@@ -832,7 +829,7 @@ video {
     position: relative;
 }
 .mantra-screen .mantra {
-    padding: 115px 45px;
+    /* padding: 115px 45px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -843,13 +840,13 @@ video {
 
 @media all and (min-width:768px) and (max-width:1023px) {
     .mantra-screen .mantra {
-        padding: 115px 30px
+        /* padding: 115px 30px */
     }
 }
 
 @media all and (max-width:767px) {
     .mantra-screen .mantra {
-        padding: 150px 35px 50px;
+        /* padding: 150px 35px 50px; */
         display: none
     }
 }
